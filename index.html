@@ -12,9 +12,19 @@
             <h1>Pomodoro timer</h1>
         </div>
         <div id = "etat">travail</div>
-        <div id ="timer">
-            <p id="minutes">25</p><p>:</p><p id="secondes">00</p>
+        <div id = "timer">
+            <p id = "minutes">25</p><p>:</p><p id = "secondes">00</p>
         </div>
-        <div><button id="start">start</button></div>
+        <div><button id = "start">start</button></div>
+        <div>
+            <div id = "travail">
+                <div>Temps de travail : </div>
+                <div><input type="number" id = "Temps_Travail" oninput="calc()" value="3"></div>
+            </div>
+            <div id = "pause">
+                <div>Temps de pause : </div>
+                <div><input type="number" id = "Temps_Pause" oninput="calc()" value="3"></div>
+            </div>
+        </div>
     </body>
 </html>

@@ -33,16 +33,14 @@ function ecoule_temps() {
         etat.textContent = "travail"
     }
     secondes.textContent = affichSecondes(secondes.textContent);
-    minutes.textContent = affichSecondes(minutes.textContent);
-    
-    
+    minutes.textContent = affichSecondes(minutes.textContent); 
 }
 
 function depart() {
     if (start.textContent == "start") {
         start.textContent = "reset";
         clearInterval(arret_interval); // Efface l'intervalle précédent
-        arret_interval = setInterval(ecoule_temps, 1000);
+        arret_interval = setInterval(ecoule_temps, 5);
     }
     else if (start.textContent == "reset") {
         start.textContent = "start";
@@ -54,4 +52,3 @@ function depart() {
 }
 
 start.addEventListener("click", depart);
-

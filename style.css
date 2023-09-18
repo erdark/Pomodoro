@@ -45,6 +45,22 @@ div{
     padding: 0;
 }
 
+#travail, #pause{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+#Temps_Travail, #Temps_Pause{
+    width: 30px;
+    margin-left: 5px;
+}
+
 #start{
     margin-top: 30px;
 }
