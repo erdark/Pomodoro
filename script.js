@@ -1,7 +1,11 @@
 const minutes = document.getElementById("minutes");
 const secondes = document.getElementById("secondes");
+
 const start = document.getElementById("start");
 const etat = document.getElementById("etat");
+
+const Temps_Travail = document.getElementById("Temps_Travail")
+
 let arret_interval = undefined; // Utilisez let au lieu de const pour pouvoir réassigner la variable
 
 function affichSecondes(secondes) {
@@ -37,10 +41,11 @@ function ecoule_temps() {
 }
 
 function depart() {
+    console.log(Temps_Travail.value)
     if (start.textContent == "start") {
         start.textContent = "reset";
         clearInterval(arret_interval); // Efface l'intervalle précédent
-        arret_interval = setInterval(ecoule_temps, 5);
+        arret_interval = setInterval(ecoule_temps, 1000);
     }
     else if (start.textContent == "reset") {
         start.textContent = "start";
