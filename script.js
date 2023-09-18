@@ -48,7 +48,7 @@ function depart() {
     if (start.textContent == "start") {
         start.textContent = "reset";
         clearInterval(arret_interval); // Efface l'intervalle précédent
-        arret_interval = setInterval(ecoule_temps, 10);
+        arret_interval = setInterval(ecoule_temps, 1000);
     }
     else if (start.textContent == "reset") {
         start.textContent = "start";
