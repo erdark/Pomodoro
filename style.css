@@ -1,3 +1,35 @@
+
 body{
-    background-color: white;
+    background-color: black;
 }
+
+div{
+    color: white;
+    text-align: center;
+}
+
+#timer{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white; /* Ajout de la bordure blanche */
+    margin-top: 30px;
+}
+
+#minutes, #secondes {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+#start{
+    margin-top: 30px;
+}
+
