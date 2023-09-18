@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+}
+
+div{
+    color: white;
+    text-align: center;
+}
+
+#etat{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 3px solid white;
+    width: 60px;
+    height: 30px;
+    border-radius: 30%;
+    background-color: black;
+}
+
+#timer{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white; /* Ajout de la bordure blanche */
+    margin-top: 30px;
+    background-color: black;
+}
+
+#minutes, #secondes {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+#travail, #pause{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+#Temps_Travail, #Temps_Pause{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#soumettre{
+    margin-top: 10px;
+}
+
+#start{
+    margin-top: 30px;
+}
