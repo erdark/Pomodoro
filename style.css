@@ -8,6 +8,21 @@ div{
     text-align: center;
 }
 
+#etat{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 3px solid white;
+    width: 60px;
+    height: 30px;
+    border-radius: 30%;
+    background-color: black;
+}
+
 #timer{
     text-align: center;
     margin: auto;
@@ -21,6 +36,7 @@ div{
     border-radius: 50%;
     border: 5px solid white; /* Ajout de la bordure blanche */
     margin-top: 30px;
+    background-color: black;
 }
 
 #minutes, #secondes {
