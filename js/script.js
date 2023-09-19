@@ -66,12 +66,10 @@ function depart_chrono() {
 // Fonction pour modifier les durées de travail et de pause
 function modifier() {
     if (Temps_Travail.value >= 1 && Temps_Travail.value <= 60) {
-        console.log(Temps_Travail.value);
         minutes.textContent = affichSecondes(parseInt(Temps_Travail.value));
         sauvegarde_travail = minutes.textContent;
     }
     if (Temps_Pause.value >= 1 && Temps_Pause.value <= 60) {
-        console.log(Temps_Pause.value);
         sauvegarde_pause = affichSecondes(parseInt(Temps_Pause.value));
     }
 }
