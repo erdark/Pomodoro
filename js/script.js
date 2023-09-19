@@ -67,6 +67,7 @@ function depart_chrono() {
 function modifier() {
     if (Temps_Travail.value >= 1 && Temps_Travail.value <= 60) {
         minutes.textContent = affichSecondes(parseInt(Temps_Travail.value));
+        secondes.textContent = "00";
         sauvegarde_travail = minutes.textContent;
     }
     if (Temps_Pause.value >= 1 && Temps_Pause.value <= 60) {
