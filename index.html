@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <!-- <link rel="icon" type="image/x-icon" href="nom de l'image"> -->
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
+        <link rel="icon" type="image/x-icon" href="image/stopwatch-solid.svg">
+        <link rel="stylesheet" href="./css/style.css">
+        <script defer src="./js/script.js"></script>
     </head>
     <body>
-        <div>
-            <h1>Pomodoro timer</h1>
-        </div>
-        <div id = "etat">travail</div>
-        <div id = "timer">
-            <p id = "minutes">25</p><p>:</p><p id = "secondes">00</p>
-        </div>
-        <div><button id = "start">start</button></div>
-        <form method="get" class="test">
-            <div id = "travail">
-                <div>Temps de travail : </div>
-                <div><input type="number" id = "Temps_Travail"></div>
+        <header>
+            <div>
+                <h1>Pomodoro chronomètre</h1>
             </div>
-            <div id = "pause">
-                <div>Temps de pause : </div>
-                <div><input type="number" id = "Temps_Pause"></div>
+        </header>
+        <main>
+            <div id = "etat">travail</div>
+            <div id = "chronomètre">
+                <h id = "minutes">25</h><p>:</p><h id = "secondes">00</h>
             </div>
-        </form>
-        <div><button id = "soumettre">soumettre</button></div>
+            <div><button id = "start">start</button></div>
+            <form class="test">
+                <div id = "travail">
+                    <div><label for = "Temps_Travail">Temps de travail : </label></div>
+                    <div><input type="number" id = "Temps_Travail" value="25"></div>
+                </div>
+                <div id = "pause">
+                    <div><label for = "Temps_Pause">Temps de pause : </label></div>
+                    <div><input type="number" id = "Temps_Pause" value="5"></div>
+                </div>
+            </form>
+            <div><button id = "soumettre">soumettre</button></div>
+        </main>
     </body>
 </html>
