@@ -7,4 +7,4 @@ L'utilisation est très simple. Il suffit de cliquer sur le bouton "départ" pou
 ## Configuration 🔧
 Il est possible de changer la durée du cycle de travail, ainsi que celui des pauses. Il suffit de renseigner la durée en minute (valeur possible entre 1 et 60) dans le champ adéquat.
 ## Contribution 🚧
-Cette application a été entièrement réalisée par Cyrille RIGUET, dans le cadre d'un projet de cours, au sein de l'IUT Grand Ouest Normandie. Je remercie mes camarades Maxime JOBARD, Vladimir REKAI et Emeline LAIGLE pour leur aide. 
+Cette application a été entièrement réalisée par Cyrille RIGUET, dans le cadre d'un projet de cours, au sein de l'IUT Grand Ouest Normandie. Je remercie mes camarades Maxime JOBARD et Emeline LAIGLE pour leur aide. 
