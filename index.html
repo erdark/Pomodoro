@@ -1,36 +1,43 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="icon" type="image/x-icon" href="image/stopwatch-solid.svg">
-        <link rel="stylesheet" href="./css/style.css">
-        <script defer src="./js/script.js"></script>
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>Pomodoro chronomètre</h1>
+<!DOCTYPE html> <!-- Déclaration du type de document -->
+<html lang="fr"> <!-- Balise principale du document, indiquant la langue française -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue pour les appareils mobiles -->
+    <title>Document</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="icon" type="image/x-icon" href="image/stopwatch-solid.svg"> <!-- Icône de l'onglet du navigateur -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Lien vers la feuille de style CSS -->
+    <script defer src="./js/script.js"></script> <!-- Lien vers le script JavaScript, différé -->
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Pomodoro chronomètre</h1> <!-- En-tête de la page avec un titre -->
+        </div>
+    </header>
+
+    <main>
+        <div id="etat">travail</div> <!-- Affichage de l'état (travail/pause) -->
+        <div id="chronomètre">
+            <h id="minutes">25</h><p>:</p><h id="secondes">00</h> <!-- Affichage du chronomètre -->
+        </div>
+        <div><button id="depart">depart</button></div> <!-- Bouton de départ du chronomètre -->
+
+        <form class="test">
+            <div id="travail">
+                <div><label for="Temps_Travail">Temps de travail : </label></div> <!-- Champ pour le temps de travail -->
+                <div><input type="number" id="Temps_Travail" value="25"></div>
             </div>
-        </header>
-        <main>
-            <div id = "etat">travail</div>
-            <div id = "chronomètre">
-                <h id = "minutes">25</h><p>:</p><h id = "secondes">00</h>
+
+            <div id="pause">
+                <div><label for="Temps_Pause">Temps de pause : </label></div> <!-- Champ pour le temps de pause -->
+                <div><input type="number" id="Temps_Pause" value="5"></div>
             </div>
-            <div><button id = "start">start</button></div>
-            <form class="test">
-                <div id = "travail">
-                    <div><label for = "Temps_Travail">Temps de travail : </label></div>
-                    <div><input type="number" id = "Temps_Travail" value="25"></div>
-                </div>
-                <div id = "pause">
-                    <div><label for = "Temps_Pause">Temps de pause : </label></div>
-                    <div><input type="number" id = "Temps_Pause" value="5"></div>
-                </div>
-            </form>
-            <div><button id = "soumettre">soumettre</button></div>
-        </main>
-    </body>
+        </form>
+
+        <div><button id="soumettre">soumettre</button></div> <!-- Bouton pour soumettre les temps -->
+    </main>
+</body>
+
 </html>
